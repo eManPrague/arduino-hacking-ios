@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90367051D37999C00089551 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90367031D37999C00089551 /* CocoaAsyncSocket.framework */; };
+		E90367061D37999C00089551 /* CocoaMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90367041D37999C00089551 /* CocoaMQTT.framework */; };
+		E903670A1D379BFC00089551 /* MSWeakTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90367091D379BFC00089551 /* MSWeakTimer.framework */; };
+		E903671D1D3D258600089551 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903671B1D3D258600089551 /* Interface.storyboard */; };
+		E903671F1D3D258600089551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E903671E1D3D258600089551 /* Assets.xcassets */; };
+		E90367261D3D258600089551 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E90367251D3D258600089551 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E903672B1D3D258600089551 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903672A1D3D258600089551 /* InterfaceController.swift */; };
+		E903672D1D3D258600089551 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903672C1D3D258600089551 /* ExtensionDelegate.swift */; };
+		E903672F1D3D258600089551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E903672E1D3D258600089551 /* Assets.xcassets */; };
+		E90367331D3D258600089551 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E90367191D3D258500089551 /* WatchApp.app */; };
+		E903673F1D3D275E00089551 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916669C1B4867CA00015862 /* Log.swift */; };
+		E90367411D3D29C800089551 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90367401D3D29C800089551 /* Colors.swift */; };
+		E90367421D3D2AB700089551 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90367401D3D29C800089551 /* Colors.swift */; };
+		E90367431D3D2B1A00089551 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125811D2D7EE500393C0F /* UIColor.swift */; };
+		E916663F1B45EE9100015862 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E916663D1B45EE9100015862 /* Localizable.strings */; };
+		E916664A1B45F00700015862 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91666491B45F00700015862 /* Constants.swift */; };
+		E916668F1B4699B200015862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916668E1B4699B200015862 /* AppDelegate.swift */; };
+		E916669D1B4867CA00015862 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916669C1B4867CA00015862 /* Log.swift */; };
+		E937CC681D4E4B970030421E /* Diod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E937CC671D4E4B960030421E /* Diod.swift */; };
+		E937CC691D4E4BAC0030421E /* Diod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E937CC671D4E4B960030421E /* Diod.swift */; };
+		E9F125621D2AEF9500393C0F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125611D2AEF9500393C0F /* Client.swift */; };
+		E9F125661D2D665400393C0F /* ArduinoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125651D2D665400393C0F /* ArduinoVC.swift */; };
+		E9F1256C1D2D702E00393C0F /* ArduinoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F1256B1D2D702E00393C0F /* ArduinoVC.xib */; };
+		E9F1256E1D2D78C200393C0F /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F1256D1D2D78C200393C0F /* SwitchView.xib */; };
+		E9F125701D2D78D400393C0F /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1256F1D2D78D400393C0F /* SwitchView.swift */; };
+		E9F125791D2D7B9B00393C0F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125781D2D7B9B00393C0F /* UIView.swift */; };
+		E9F125821D2D7EE500393C0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125811D2D7EE500393C0F /* UIColor.swift */; };
+		E9F125841D2D842800393C0F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F125831D2D842800393C0F /* HeaderView.swift */; };
+		E9F457CE1B22164C00F6B98D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F457CB1B22164C00F6B98D /* Images.xcassets */; };
+		E9F457D21B22169A00F6B98D /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F457D11B22169A00F6B98D /* Flow.swift */; };
+		E9F457D41B2216A700F6B98D /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F457D31B2216A700F6B98D /* BaseVC.swift */; };
+		E9F457DA1B2216F600F6B98D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F457D81B2216F600F6B98D /* AppFlow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E90367271D3D258600089551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E923FA821B1A2236004715C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90367241D3D258600089551;
+			remoteInfo = "WatchApp Extension";
+		};
+		E90367311D3D258600089551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E923FA821B1A2236004715C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90367181D3D258500089551;
+			remoteInfo = WatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E90367391D3D258600089551 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E90367261D3D258600089551 /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E903673B1D3D258600089551 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E90367331D3D258600089551 /* WatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E90367011D37989000089551 /* Cartfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Cartfile; sourceTree = "<group>"; };
+		E90367031D37999C00089551 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		E90367041D37999C00089551 /* CocoaMQTT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMQTT.framework; path = Carthage/Build/iOS/CocoaMQTT.framework; sourceTree = "<group>"; };
+		E90367091D379BFC00089551 /* MSWeakTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSWeakTimer.framework; path = Carthage/Build/iOS/MSWeakTimer.framework; sourceTree = "<group>"; };
+		E90367191D3D258500089551 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E903671C1D3D258600089551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E903671E1D3D258600089551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90367201D3D258600089551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90367251D3D258600089551 /* WatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E903672A1D3D258600089551 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E903672C1D3D258600089551 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E903672E1D3D258600089551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90367301D3D258600089551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90367401D3D29C800089551 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Shared/Colors.swift; sourceTree = "<group>"; };
+		E91666381B45EACC00015862 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E916663E1B45EE9100015862 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = App/Resources/cs.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		E91666441B45EEBF00015862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = App/Resources/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		E91666491B45F00700015862 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = App/General/Constants.swift; sourceTree = SOURCE_ROOT; };
+		E916668E1B4699B200015862 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E91666951B4830DF00015862 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = App/General/BridgingHeader.h; sourceTree = SOURCE_ROOT; };
+		E91666971B48315200015862 /* Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Swift.h; path = App/General/Swift.h; sourceTree = SOURCE_ROOT; };
+		E916669C1B4867CA00015862 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Shared/Libraries/Log.swift; sourceTree = "<group>"; };
+		E923FA8A1B1A2236004715C6 /* ArduinoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArduinoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E937CC671D4E4B960030421E /* Diod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diod.swift; path = Shared/Diod.swift; sourceTree = "<group>"; };
+		E9F125611D2AEF9500393C0F /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = App/Synchronization/Client.swift; sourceTree = "<group>"; };
+		E9F125651D2D665400393C0F /* ArduinoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArduinoVC.swift; path = App/GUI/Global/ArduinoVC.swift; sourceTree = "<group>"; };
+		E9F1256B1D2D702E00393C0F /* ArduinoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArduinoVC.xib; path = App/GUI/Global/ArduinoVC.xib; sourceTree = "<group>"; };
+		E9F1256D1D2D78C200393C0F /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwitchView.xib; path = App/GUI/Global/SwitchView.xib; sourceTree = "<group>"; };
+		E9F1256F1D2D78D400393C0F /* SwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchView.swift; path = App/GUI/Global/SwitchView.swift; sourceTree = "<group>"; };
+		E9F125781D2D7B9B00393C0F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Shared/Extensions/UIView.swift; sourceTree = "<group>"; };
+		E9F125811D2D7EE500393C0F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Shared/Extensions/UIColor.swift; sourceTree = "<group>"; };
+		E9F125831D2D842800393C0F /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = App/GUI/Global/HeaderView.swift; sourceTree = "<group>"; };
+		E9F457CB1B22164C00F6B98D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = App/Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		E9F457CC1B22164C00F6B98D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = App/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		E9F457D11B22169A00F6B98D /* Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flow.swift; path = App/GUI/Shared/Flows/Flow.swift; sourceTree = SOURCE_ROOT; };
+		E9F457D31B2216A700F6B98D /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = App/GUI/Shared/Controllers/BaseVC.swift; sourceTree = SOURCE_ROOT; };
+		E9F457D81B2216F600F6B98D /* AppFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFlow.swift; path = App/GUI/Global/AppFlow.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90367221D3D258600089551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E923FA871B1A2236004715C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90367051D37999C00089551 /* CocoaAsyncSocket.framework in Frameworks */,
+				E903670A1D379BFC00089551 /* MSWeakTimer.framework in Frameworks */,
+				E90367061D37999C00089551 /* CocoaMQTT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28911C7B8A081563D03CADA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E90367091D379BFC00089551 /* MSWeakTimer.framework */,
+				E90367031D37999C00089551 /* CocoaAsyncSocket.framework */,
+				E90367041D37999C00089551 /* CocoaMQTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E903671A1D3D258600089551 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				E903671B1D3D258600089551 /* Interface.storyboard */,
+				E903671E1D3D258600089551 /* Assets.xcassets */,
+				E90367201D3D258600089551 /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		E90367291D3D258600089551 /* WatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E903672A1D3D258600089551 /* InterfaceController.swift */,
+				E903672C1D3D258600089551 /* ExtensionDelegate.swift */,
+				E903672E1D3D258600089551 /* Assets.xcassets */,
+				E90367301D3D258600089551 /* Info.plist */,
+			);
+			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+		E916662F1B45E95A00015862 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E91666301B45E97800015862 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9F125781D2D7B9B00393C0F /* UIView.swift */,
+				E9F125811D2D7EE500393C0F /* UIColor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E91666321B45E9C500015862 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E91666491B45F00700015862 /* Constants.swift */,
+				E91666951B4830DF00015862 /* BridgingHeader.h */,
+				E91666971B48315200015862 /* Swift.h */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		E923FA811B1A2236004715C6 = {
+			isa = PBXGroup;
+			children = (
+				E91666381B45EACC00015862 /* README.md */,
+				E90367011D37989000089551 /* Cartfile */,
+				E923FAD41B1B48ED004715C6 /* Shared */,
+				E923FA8C1B1A2236004715C6 /* App */,
+				E903671A1D3D258600089551 /* WatchApp */,
+				E90367291D3D258600089551 /* WatchApp Extension */,
+				E923FA8B1B1A2236004715C6 /* Products */,
+				28911C7B8A081563D03CADA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E923FA8B1B1A2236004715C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E923FA8A1B1A2236004715C6 /* ArduinoApp.app */,
+				E90367191D3D258500089551 /* WatchApp.app */,
+				E90367251D3D258600089551 /* WatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E923FA8C1B1A2236004715C6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E91666321B45E9C500015862 /* General */,
+				E923FAC51B1B41D2004715C6 /* Synchronization */,
+				E923FAB61B1A2597004715C6 /* GUI */,
+				E923FAB51B1A252C004715C6 /* Resources */,
+				E916668E1B4699B200015862 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E923FAB51B1A252C004715C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9F457CB1B22164C00F6B98D /* Images.xcassets */,
+				E9F457CC1B22164C00F6B98D /* Info.plist */,
+				E916663D1B45EE9100015862 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E923FAB61B1A2597004715C6 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				E923FABC1B1B3FDF004715C6 /* Shared */,
+				E923FACB1B1B42F7004715C6 /* Global */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		E923FABC1B1B3FDF004715C6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E923FABD1B1B3FE7004715C6 /* Flows */,
+				E923FABE1B1B3FF7004715C6 /* Controllers */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		E923FABD1B1B3FE7004715C6 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E9F457D11B22169A00F6B98D /* Flow.swift */,
+			);
+			name = Flows;
+			sourceTree = "<group>";
+		};
+		E923FABE1B1B3FF7004715C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9F457D31B2216A700F6B98D /* BaseVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E923FAC51B1B41D2004715C6 /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				E9F125611D2AEF9500393C0F /* Client.swift */,
+			);
+			name = Synchronization;
+			sourceTree = "<group>";
+		};
+		E923FACB1B1B42F7004715C6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E9F457D81B2216F600F6B98D /* AppFlow.swift */,
+				E9F125651D2D665400393C0F /* ArduinoVC.swift */,
+				E9F1256B1D2D702E00393C0F /* ArduinoVC.xib */,
+				E9F1256F1D2D78D400393C0F /* SwitchView.swift */,
+				E9F1256D1D2D78C200393C0F /* SwitchView.xib */,
+				E9F125831D2D842800393C0F /* HeaderView.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		E923FAD41B1B48ED004715C6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E91666301B45E97800015862 /* Extensions */,
+				E923FAD51B1B4909004715C6 /* Libraries */,
+				E916662F1B45E95A00015862 /* Resources */,
+				E90367401D3D29C800089551 /* Colors.swift */,
+				E937CC671D4E4B960030421E /* Diod.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		E923FAD51B1B4909004715C6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E916669C1B4867CA00015862 /* Log.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90367181D3D258500089551 /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E903673A1D3D258600089551 /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				E90367171D3D258500089551 /* Resources */,
+				E90367391D3D258600089551 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90367281D3D258600089551 /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = E90367191D3D258500089551 /* WatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E90367241D3D258600089551 /* WatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90367381D3D258600089551 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */;
+			buildPhases = (
+				E90367211D3D258600089551 /* Sources */,
+				E90367221D3D258600089551 /* Frameworks */,
+				E90367231D3D258600089551 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp Extension";
+			productName = "WatchApp Extension";
+			productReference = E90367251D3D258600089551 /* WatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E923FA891B1A2236004715C6 /* ArduinoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E923FAA91B1A2236004715C6 /* Build configuration list for PBXNativeTarget "ArduinoApp" */;
+			buildPhases = (
+				E91666AB1B4AD48F00015862 /* Generate warnings */,
+				E923FA881B1A2236004715C6 /* Resources */,
+				E923FA861B1A2236004715C6 /* Sources */,
+				E923FA871B1A2236004715C6 /* Frameworks */,
+				E90367081D3799EB00089551 /* Carthage */,
+				E903673B1D3D258600089551 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90367321D3D258600089551 /* PBXTargetDependency */,
+			);
+			name = ArduinoApp;
+			productName = App;
+			productReference = E923FA8A1B1A2236004715C6 /* ArduinoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E923FA821B1A2236004715C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "eMan s.r.o.";
+				TargetAttributes = {
+					E90367181D3D258500089551 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E90367241D3D258600089551 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E923FA891B1A2236004715C6 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = E923FA851B1A2236004715C6 /* Build configuration list for PBXProject "ArduinoHacking" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				cs,
+			);
+			mainGroup = E923FA811B1A2236004715C6;
+			productRefGroup = E923FA8B1B1A2236004715C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E923FA891B1A2236004715C6 /* ArduinoApp */,
+				E90367181D3D258500089551 /* WatchApp */,
+				E90367241D3D258600089551 /* WatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90367171D3D258500089551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E903671F1D3D258600089551 /* Assets.xcassets in Resources */,
+				E903671D1D3D258600089551 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90367231D3D258600089551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E903672F1D3D258600089551 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E923FA881B1A2236004715C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E916663F1B45EE9100015862 /* Localizable.strings in Resources */,
+				E9F1256E1D2D78C200393C0F /* SwitchView.xib in Resources */,
+				E9F1256C1D2D702E00393C0F /* ArduinoVC.xib in Resources */,
+				E9F457CE1B22164C00F6B98D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E90367081D3799EB00089551 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaMQTT.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MSWeakTimer.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E91666AB1B4AD48F00015862 /* Generate warnings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate warnings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:|WARN:\"\necho \"searching ${SRCROOT}/App for ${TAGS}\"\nfind \"${SRCROOT}/App\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90367211D3D258600089551 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E903672D1D3D258600089551 /* ExtensionDelegate.swift in Sources */,
+				E90367421D3D2AB700089551 /* Colors.swift in Sources */,
+				E903672B1D3D258600089551 /* InterfaceController.swift in Sources */,
+				E937CC691D4E4BAC0030421E /* Diod.swift in Sources */,
+				E903673F1D3D275E00089551 /* Log.swift in Sources */,
+				E90367431D3D2B1A00089551 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E923FA861B1A2236004715C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F457DA1B2216F600F6B98D /* AppFlow.swift in Sources */,
+				E90367411D3D29C800089551 /* Colors.swift in Sources */,
+				E9F457D41B2216A700F6B98D /* BaseVC.swift in Sources */,
+				E916669D1B4867CA00015862 /* Log.swift in Sources */,
+				E9F125841D2D842800393C0F /* HeaderView.swift in Sources */,
+				E9F125621D2AEF9500393C0F /* Client.swift in Sources */,
+				E9F125701D2D78D400393C0F /* SwitchView.swift in Sources */,
+				E916664A1B45F00700015862 /* Constants.swift in Sources */,
+				E916668F1B4699B200015862 /* AppDelegate.swift in Sources */,
+				E9F125821D2D7EE500393C0F /* UIColor.swift in Sources */,
+				E9F125791D2D7B9B00393C0F /* UIView.swift in Sources */,
+				E937CC681D4E4B970030421E /* Diod.swift in Sources */,
+				E9F125661D2D665400393C0F /* ArduinoVC.swift in Sources */,
+				E9F457D21B22169A00F6B98D /* Flow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E90367281D3D258600089551 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90367241D3D258600089551 /* WatchApp Extension */;
+			targetProxy = E90367271D3D258600089551 /* PBXContainerItemProxy */;
+		};
+		E90367321D3D258600089551 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90367181D3D258500089551 /* WatchApp */;
+			targetProxy = E90367311D3D258600089551 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E903671B1D3D258600089551 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E903671C1D3D258600089551 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		E916663D1B45EE9100015862 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E916663E1B45EE9100015862 /* cs */,
+				E91666441B45EEBF00015862 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E90367341D3D258600089551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f91b52cd-c4a1-4374-8d82-111dfb457ce6";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E90367351D3D258600089551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		E90367361D3D258600089551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "f91b52cd-c4a1-4374-8d82-111dfb457ce6";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E90367371D3D258600089551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		E916662B1B45E30A00015862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TEST=1",
+					"EM_BA=$(EM_BA)",
+					"EM_LG=$(EM_LG)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E916662C1B45E30A00015862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(APP_PROFILE)";
+				SWIFT_OBJC_BRIDGING_HEADER = App/General/BridgingHeader.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = App/General/Swift.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E923FAA71B1A2236004715C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					"EM_BA=$(EM_BA)",
+					"EM_LG=$(EM_LG)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E923FAAA1B1A2236004715C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.eman.arduino-hacking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f91b52cd-c4a1-4374-8d82-111dfb457ce6";
+				SWIFT_OBJC_BRIDGING_HEADER = App/General/BridgingHeader.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = App/General/Swift.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90367381D3D258600089551 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90367361D3D258600089551 /* Debug */,
+				E90367371D3D258600089551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E903673A1D3D258600089551 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90367341D3D258600089551 /* Debug */,
+				E90367351D3D258600089551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E923FA851B1A2236004715C6 /* Build configuration list for PBXProject "ArduinoHacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E923FAA71B1A2236004715C6 /* Debug */,
+				E916662B1B45E30A00015862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E923FAA91B1A2236004715C6 /* Build configuration list for PBXNativeTarget "ArduinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E923FAAA1B1A2236004715C6 /* Debug */,
+				E916662C1B45E30A00015862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E923FA821B1A2236004715C6 /* Project object */;
+}

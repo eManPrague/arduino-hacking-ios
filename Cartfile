@@ -1,0 +1,8 @@
+#
+# Created by Pavel Dolezal on 23.02.15.
+# Copyright (c) 2013 eMan s.r.o. All rights reserved.
+#
+
+github "robbiehanson/CocoaAsyncSocket" "master"
+github "CrazyWisdom/MSWeakTimer" "master"
+github "emqtt/CocoaMQTT" "master"

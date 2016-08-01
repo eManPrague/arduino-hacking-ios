@@ -1,0 +1,3 @@
+github "robbiehanson/CocoaAsyncSocket" "f477467fa793f7a012d3af9c373c6014d7267a55"
+github "emqtt/CocoaMQTT" "90139badc5070f48279d07c4d6a524d1592e52be"
+github "CrazyWisdom/MSWeakTimer" "8662f28ccbc96fff28aa9ad148eb2d89384adc05"

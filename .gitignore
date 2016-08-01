@@ -1,0 +1,25 @@
+# osx image file
+.DS_Store
+
+# xcode4 backup files
+*.swp
+*~.nib
+
+# xcode4 builds and user settings
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+xcuserdata
+
+# AppCode
+.idea/
+
+# old skool
+.svn
+.cvs
+
+# git
+*.orig

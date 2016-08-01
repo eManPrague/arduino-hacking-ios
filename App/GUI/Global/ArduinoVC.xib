@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArduinoVC" customModule="ArduinoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="vjF-jy-LUM" id="zvo-FU-ICb"/>
+                <outlet property="stackView" destination="xDi-bP-P7s" id="UOq-pP-DS6"/>
+                <outlet property="view" destination="iN0-l3-epB" id="36s-yY-bTC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xDi-bP-P7s">
+                    <rect key="frame" x="0.0" y="88" width="320" height="480"/>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjF-jy-LUM" customClass="HeaderView" customModule="ArduinoApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="67" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xDi-bP-P7s" secondAttribute="trailing" id="4jC-lc-Db0"/>
+                <constraint firstAttribute="bottom" secondItem="xDi-bP-P7s" secondAttribute="bottom" id="7R3-If-Yuf"/>
+                <constraint firstAttribute="trailing" secondItem="vjF-jy-LUM" secondAttribute="trailing" id="BYq-mv-8dg"/>
+                <constraint firstItem="xDi-bP-P7s" firstAttribute="top" secondItem="vjF-jy-LUM" secondAttribute="bottom" id="dnT-Kt-VmL"/>
+                <constraint firstItem="vjF-jy-LUM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="67" id="gIo-WO-rch"/>
+                <constraint firstItem="vjF-jy-LUM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lyv-jD-D8J"/>
+                <constraint firstItem="xDi-bP-P7s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yxA-s2-PCf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="299" y="324"/>
+        </view>
+    </objects>
+</document>
